@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1483827052 source:c:\users\carlos\documents\dcc  - ciência da computação\estrutura de dados i\exemplos de estruturas de dados (projetos)\exemplo3(lista)\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1483826774 c:\users\carlos\documents\dcc  - ciência da computação\estrutura de dados i\exemplos de estruturas de dados (projetos)\exemplo3(lista)\lista.h
+
+1483834027 source:c:\users\carlos\documents\dcc  - ciência da computação\estrutura de dados i\exemplos de estruturas de dados (projetos)\exemplo3(lista)\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista.h"
+
