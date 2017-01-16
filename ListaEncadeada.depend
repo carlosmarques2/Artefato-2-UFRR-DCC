@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1479476343 source:t:\listaencadeada\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1479476343 t:\listaencadeada\lista.h
+
+1479477006 source:t:\listaencadeada\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1484524375 source:c:\users\carlos\desktop\listaencadeada\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1484522543 c:\users\carlos\desktop\listaencadeada\lista.h
+
+1484523448 source:c:\users\carlos\desktop\listaencadeada\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista.h"
+

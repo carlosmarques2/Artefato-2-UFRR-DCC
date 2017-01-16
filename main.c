@@ -5,19 +5,21 @@
 
 int main()
 {
+    printf("Testanto Lista!\n");
     FILE *arquivo;
-    int cont = 0,i,j,csh[10000],linha = 0,line[10000];
+    int cont = 0,i=0,j=0,csh[10000],linha = 0,line[10000];
+    int cont_lista = 0;//Contador de Listas Auxiliares
     char aux[1000],c,str[1000],let;
-
+    //Lista** vetor =(Lista**) malloc(sizeof(Lista)*100);
     for(i=0;i<10000;i++){
         csh[i] = 0;
     }
     for(i=0;i<10000;i++){
         line[i] = 0;
     }
-    printf("Testando Lista\n");
     Lista *l = cria_lista();
-
+    Lista *k = cria_lista();
+    k = inserir_lista3(k,' ',1,1);
     arquivo = fopen("teste.txt", "rt");
     if (arquivo == NULL) {
        printf ("Houve um erro ao abrir o arquivo.\n");
@@ -75,15 +77,41 @@ int main()
             }
         }
     }
-    printf("\n");
+
     for(i=0;i<cont;i++){
-        l = inserir_lista(l,line[i],csh[i],aux[i]);
         printf("Linha: %d ",line[i]);
         printf("String: %c ",aux[i]);
         printf("Quantidade: %d\n",csh[i]);
     }
-
-    mostra_lista(l);
-    libera_lista(l);
+    ordenar_string(cont,aux,line,csh);
+    printf("\n");
+    for(i=0;i<cont;i++){
+        if(verifica(l,aux[i])){
+            if(k->indice==aux[i]){
+                k = inserir_lista2(k,aux[i],line[i],csh[i]);
+                k->segundo_no = NULL;
+                //vetor[cont_lista-1] = k;
+            }
+            else{
+                k = cria_lista();
+                k = busca(l,aux[i]);
+                k = inserir_lista2(k,aux[i],line[i],csh[i]);
+                k->segundo_no = NULL;
+                //vetor[cont_lista] = k;
+                //cont_lista++;
+            }
+            printf("Linha: %d ",line[i]);
+            printf("String: %c ",aux[i]);
+            printf("Quantidade: %d\n",csh[i]);
+        }
+        else{
+            l = inserir_lista(l,aux[i],line[i],csh[i]);
+            printf("Linha: %d ",line[i]);
+            printf("String: %c ",aux[i]);
+            printf("Quantidade: %d\n",csh[i]);
+        }
+    }
+    mostra_lista(l,k);
+    libera_lista(l,k);
     return 0;
 }
