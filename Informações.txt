@@ -1,6 +1,9 @@
 Trabalho Pratico 1 
-Estrututas de Dados - Ciência da Computação
+Estrututas de Dados - CiÃªncia da ComputaÃ§Ã£o
 Carlos Alberto Vieira Marques Filho
 
 13/01/2017 - 11:50
-Funcionalidade apenas com caracteres e sem implementação de lista com mais de 1 nó. 
+Funcionalidade apenas com caracteres e sem implementaÃ§Ã£o de lista com mais de 1 nÃ³.
+AtualizaÃ§Ã£o
+15/01/2017 - 20:34
+Implementado listas com mais de 1 nÃ³.
