@@ -7,3 +7,7 @@ Funcionalidade apenas com caracteres e sem implementação de lista com mais de 
 Atualização
 15/01/2017 - 20:34
 Implementado listas com mais de 1 nó.
+16/01/2017 - 00:25
+Adicionado
+  -Projeto Concluido(Artefato 2).
+  -Codigo com a primeira Implementação de Arquivos e Contagem de Caracteres feito no dia 07/01/2017.
